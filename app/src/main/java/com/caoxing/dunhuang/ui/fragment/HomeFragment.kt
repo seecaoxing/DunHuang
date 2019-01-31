@@ -1,21 +1,11 @@
 package com.caoxing.dunhuang.ui.fragment
 
-import android.content.Intent
-import android.os.Build
 import android.os.Bundle
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import com.caoxing.dunhuang.R
 import com.caoxing.dunhuang.base.BaseFragment
-import com.caoxing.dunhuang.showToast
 import com.caoxing.dunhuang.utils.StatusBarUtil
-import com.orhanobut.logger.Logger
 import com.scwang.smartrefresh.header.MaterialHeader
 import kotlinx.android.synthetic.main.fragment_home.*
-import java.text.SimpleDateFormat
-import java.util.*
 
 @Suppress("DEPRECATION")
 /**
@@ -58,6 +48,7 @@ class HomeFragment : BaseFragment(){
      * 初始化 ViewI
      */
     override fun initView() {
+        mRefreshLayout.setEnableHeaderTranslationContent(true)
 
 
         mLayoutStatusView = multipleStatusView

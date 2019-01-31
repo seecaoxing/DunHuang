@@ -41,6 +41,9 @@ class MainActivity : BaseActivity() {
             mIndex = savedInstanceState.getInt("currTabIndex")
         }
         super.onCreate(savedInstanceState)
+
+        //第一：默认初始化
+//        Bmob.initialize(this, Constants.BMOB_APP_ID);
         initTab()
         tab_layout.currentTab = mIndex
         switchFragment(mIndex)
