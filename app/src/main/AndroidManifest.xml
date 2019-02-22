@@ -40,10 +40,10 @@
         </activity>
 
 
-        <!--<provider-->
-                <!--android:name="cn.bmob.v3.util.BmobContentProvider"-->
-                <!--android:authorities="com.caoxing.dunhuang.BmobContentProvider">-->
-        <!--</provider>-->
+        <provider
+                android:name="cn.bmob.v3.util.BmobContentProvider"
+                android:authorities="com.caoxing.dunhuang.BmobContentProvider">
+        </provider>
 
     </application>
 

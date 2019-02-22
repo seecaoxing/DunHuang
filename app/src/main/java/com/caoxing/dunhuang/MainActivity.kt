@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.FragmentTransaction
 import android.view.KeyEvent
+import cn.bmob.v3.Bmob
 import com.caoxing.dunhuang.base.BaseActivity
 import com.caoxing.dunhuang.mvp.model.bean.TabEntity
 import com.caoxing.dunhuang.ui.fragment.DiscoveryFragment
@@ -43,7 +44,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         //第一：默认初始化
-//        Bmob.initialize(this, Constants.BMOB_APP_ID);
+        Bmob.initialize(this, Constants.BMOB_APP_ID);
         initTab()
         tab_layout.currentTab = mIndex
         switchFragment(mIndex)
