@@ -19,8 +19,8 @@ fun Fragment.showToast(content: String): Toast {
     return toast
 }
 
-fun Context.showToast(content: String): Toast {
-    val toast = Toast.makeText(MyApplication.context, content, Toast.LENGTH_SHORT)
+fun Context.showToast(context :Context,content: String): Toast {
+    val toast = Toast.makeText(context, content, Toast.LENGTH_SHORT)
     toast.show()
     return toast
 }

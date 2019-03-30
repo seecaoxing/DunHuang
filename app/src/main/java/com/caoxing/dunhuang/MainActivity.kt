@@ -161,7 +161,7 @@ class MainActivity : BaseActivity() {
                 finish()
             } else {
                 mExitTime = System.currentTimeMillis()
-                showToast("再按一次退出程序")
+                showToast(this,"再按一次退出程序")
             }
             return true
         }
